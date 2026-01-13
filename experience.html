@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience | Teerat Chanromyen</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">TC</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link" data-page="index">Home</a></li>
+                <li><a href="experience.html" class="nav-link active" data-page="experience">Experience</a></li>
+                <li><a href="research.html" class="nav-link" data-page="research">Research</a></li>
+                <li><a href="projects.html" class="nav-link" data-page="projects">Projects</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <main class="main-content" id="dynamic-content">
+        <section class="page-header">
+            <h1>Experience</h1>
+            <p>My professional journey in tech.</p>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="experience-header">
+                            <div>
+                                <h3 class="experience-title">Software Engineer Intern</h3>
+                                <p class="experience-company">Google</p>
+                            </div>
+                            <span class="experience-date">Summer 2026</span>
+                        </div>
+                        <p class="experience-location">Mountain View, CA</p>
+                        <ul class="experience-description">
+                            <li>Incoming swe intern summer 2026</li>
+                        </ul>
+                        <div class="experience-skills">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="experience-header">
+                            <div>
+                                <h3 class="experience-title">Data Science Intern</h3>
+                                <p class="experience-company">FWD Insurance</p>
+                            </div>
+                            <span class="experience-date">Summer 2025</span>
+                        </div>
+                        <p class="experience-location">Bangkok, Thailand</p>
+                        <ul class="experience-description">
+                            <li>Boosted fraud model recall to 81%, preventing an estimated $2M/year in payout losses (average payout × expected detected fraudulent cases) through behavior-based feature engineering</li>
+                            <li>Pioneered a multicollinearity reduction tool that filters and selects features based on importance or variance, improving interpretability and validation F1 by 2.5%</li>
+                            <li>Built a reproducible feature-to-prediction pipeline, reducing model retraining time to under 30 minutes</li>
+                        </ul>
+                        <div class="experience-skills">
+                            <span class="skill-tag-small">Feature Engineering</span>
+                            <span class="skill-tag-small">Multicollinearity Reduction</span>
+                            <span class="skill-tag-small">Hyperparameter Tuning</span>
+                            <span class="skill-tag-small">Apache Spark</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="experience-header">
+                            <div>
+                                <h3 class="experience-title">Engineering Intern (DevOps)</h3>
+                                <p class="experience-company">Coda Payments</p>
+                            </div>
+                            <span class="experience-date">Summer 2024</span>
+                        </div>
+                        <p class="experience-location">Bangkok, Thailand</p>
+                        <ul class="experience-description">
+                            <li>Developed a company-wide alert system to detect invalid ECS/CodeDeploy configurations, preventing potential deployment errors across services used by 100+ engineers daily</li>
+                            <li>Led implementations of workflow validation and visualization functionalities, enabling safe, efficient parallel and sequential deployments across regions</li>
+                            <li>Built a deployment log export feature with date-range picker and resolved deployment timestamp records bug using Boto3 and MySQL, reducing manual query and reporting time by 90%</li>
+                        </ul>
+                        <div class="experience-skills">
+                            <span class="skill-tag-small">Web Development</span>
+                            <span class="skill-tag-small">CI/CD</span>
+                            <span class="skill-tag-small">API Development</span>
+                            <span class="skill-tag-small">Systems Design</span>
+                            <span class="skill-tag-small">Visualization</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Teaching Experience</h2>
+            <div class="teaching-list">
+                <div class="teaching-item timeline-content">
+                    <div class="teaching-header">
+                        <h3>Undergraduate Course Assistant</h3>
+                        <span class="date">Fall 2025 - Present</span>
+                    </div>
+                    <p class="institution">University of Massachusetts Amherst</p>
+                    <ul class="course-list">
+                        <li><strong>Spring 2026:</strong> CS446 - Search Engine</li>
+                        <li><strong>Fall 2025:</strong> CS240 - Probability Theory</li>
+                    </ul>
+                    <p class="description">Lead weekly discussion sections, hold office hours, and grade assignments for 100+ students.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Teerat Chanromyen. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research | Teerat Chanromyen</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">TC</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link" data-page="index">Home</a></li>
+                <li><a href="experience.html" class="nav-link" data-page="experience">Experience</a></li>
+                <li><a href="research.html" class="nav-link active" data-page="research">Research</a></li>
+                <li><a href="projects.html" class="nav-link" data-page="projects">Projects</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <main class="main-content" id="dynamic-content">
+        <section class="page-header">
+            <h1>Research</h1>
+            <p>My current interests are in machine learning, artificial intelligence, and agentic systems, particularly their applications in computational biology, trust and safety, and beyond.</p>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Research Projects</h2>
+            <div class="research-list">
+                <article class="research-card">
+                    <div class="research-header">
+                        <span class="research-type">Ongoing Project</span>
+                        <span class="research-year">Summer 2025 - Spring 2026</span>
+                    </div>
+                    <h3 class="research-title">Floating Point & Deep Network Project</h3>
+                    <p class="research-authors"><strong>Teerat Chanromyen</strong></p>
+                    <p class="research-venue">Advisors: Prof. Eliot Moss, Prof. Philip Thomas</p>
+                    <p class="research-description">
+                        We investigate how errors from floating-point arithmetic, and how more accurate methods such as compensated summation, affect the training of deep neural networks.
+                    </p>
+                    <div class="research-links">
+                        <a href="https://github.com/Teerat-CH/FPDN-PyTorch" class="research-link" target="_blank">Code</a>
+                    </div>
+                </article>
+
+                <article class="research-card">
+                    <div class="research-header">
+                        <span class="research-type">Completed Project</span>
+                        <span class="research-year">Fall 2025</span>
+                    </div>
+                    <h3 class="research-title">Manipulation and Optimization of LLMs in RAG Systems</h3>
+                    <p class="research-authors"><strong>Teerat Chanromyen</strong></p>
+                    <p class="research-venue">Advisor: Prof. James Allan</p>
+                    <p class="research-description">
+                        This Search Engine Honors project explores how different manipulation techniques influence the downstream product recommendation behavior of retrieval-augmented generation (RAG) systems. We also experiment with various defense mechanisms to mitigate such manipulations.                    </p>
+                    <div class="research-links">
+                        <a href="https://docs.google.com/document/d/1nWB8jbbMV1l96A-c3OblshWnYACy_TEL7viZXGoccVc/edit?usp=sharing" class="research-link" target="_blank">Paper</a>
+                        <a href="https://github.com/Teerat-CH/llm-rag-manipulation" class="research-link" target="_blank">Code</a>
+                    </div>
+                </article>
+
+                <article class="research-card">
+                    <div class="research-header">
+                        <span class="research-type">Completed Project</span>
+                        <span class="research-year">Summer 2025</span>
+                    </div>
+                    <h3 class="research-title">Robust and Privacy-Aware De-Identification of Clinical Text Using Modular NLP Pipelines</h3>
+                    <p class="research-authors"><strong>Teerat Chanromyen</strong>, Jimmy Jiang, LiYu Zeng</p>
+                    <p class="research-venue">Advisor: Rohan Pandey</p>
+                    <p class="research-description">
+                        We implemented an NLP pipeline for medical text de-identification with several surrogacy techniques on the i2b2 dataset, and evaluated them using privacy metrics, downstream task performance, and adversarial GPT-5 benchmarking.
+                    </p>
+                    <div class="research-links">
+                        <a href="https://drive.google.com/file/d/1D5mLa9zeQbNGkAt9FCuf3kWh_8aaWPYv/view?usp=sharing" class="research-link" target="_blank">Poster</a>
+                    </div>
+                </article>
+
+                <article class="research-card">
+                    <div class="research-header">
+                        <span class="research-type">Completed Project</span>
+                        <span class="research-year">Fall 2024 - Spring 2025</span>
+                    </div>
+                    <h3 class="research-title">Fast Python Tree Decomposition Algorithm</h3>
+                    <p class="research-authors"><strong>Teerat Chanromyen</strong></p>
+                    <p class="research-venue">Advisors: Prof. Hung Le, An La</p>
+                    <p class="research-description">
+                        We researched heuristics and implemented a fast tree decomposition algorithm in Python, achieving significant speedups over NetworkX library on benchmark road network datasets.
+                    </p>
+                    <div class="research-links">
+                        <a href="https://drive.google.com/file/d/1k7OJdZaA4In6te26KaSujby7C4ZFM_R0/view?usp=sharing" class="research-link" target="_blank" rel="noopener noreferrer">Poster</a>
+                        <a href="https://github.com/Teerat-CH/tree-decomposition" class="research-link" target="_blank" rel="noopener noreferrer">Code</a>
+                        <a href="https://drive.google.com/file/d/1daKWqauC-GSkXBobRcOBbGMZL2h4oT9k/view?usp=sharing" class="research-link" target="_blank" rel="noopener noreferrer">Slides</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Teerat Chanromyen. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

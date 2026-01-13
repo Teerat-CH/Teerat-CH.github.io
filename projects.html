@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Teerat Chanromyen</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">TC</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link" data-page="index">Home</a></li>
+                <li><a href="experience.html" class="nav-link" data-page="experience">Experience</a></li>
+                <li><a href="research.html" class="nav-link" data-page="research">Research</a></li>
+                <li><a href="projects.html" class="nav-link active" data-page="projects">Projects</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <main class="main-content" id="dynamic-content">
+        <section class="page-header">
+            <h1>Projects</h1>
+            <p>A collection of my personal projects.</p>
+        </section>
+
+        <section class="section github-section">
+            <h2 class="section-title">GitHub Activity</h2>
+            <div class="github-graph-container">
+                <a href="https://github.com/Teerat-CH" target="_blank" rel="noopener noreferrer">
+                    <!-- Light theme graph (GitHub's green) -->
+                    <img src="https://ghchart.rshah.org/40c463/Teerat-CH" alt="Teerat's GitHub Contribution Graph" class="github-graph github-graph-light">
+                    <!-- Dark theme graph (GitHub's green on dark) -->
+                    <img src="https://ghchart.rshah.org/39d353/Teerat-CH" alt="Teerat's GitHub Contribution Graph" class="github-graph github-graph-dark">
+                </a>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2 class="section-title">Projects</h2>
+            <div class="research-list">
+                <article class="research-card">
+                    <div class="research-header">
+                        <h3 class="research-title"><a href="https://github.com/asayenju/meeting_schedule_assistant" target="_blank">BMO - HackUMass 2025<svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></h3>
+                    </div>
+                    <p class="research-description">
+                        An agentic conversational assistant powered by Google's Gemini model. It understands natural language to manage everyday tasks such as reading and sending emails, checking calendar availability, scheduling meetings, and sending follow-up messages.
+                    </p>
+                    <div class="experience-skills">
+                        <span class="skill-tag-small">Gemini</span>
+                        <span class="skill-tag-small">Gmail/Calendar API, </span>
+                        <span class="skill-tag-small">FastAPI</span>
+                        <span class="skill-tag-small">ElevenLabs</span>
+                        <span class="skill-tag-small">MongoDB</span>
+                    </div>
+                </article>
+
+                <article class="research-card">
+                    <div class="research-header">
+                        <h3 class="research-title"><a href="https://github.com/Teerat-CH/multicollinearity-solver" target="_blank">Multicollinearity Solver<svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></h3>
+                    </div>
+                    <p class="research-description">
+                        Graph-based multicollinearity detection and feature-reduction engine to reduce redundancy in feature spaces and improves interpretability of the machine learning model.
+                    </p>
+                    <div class="experience-skills">
+                        <span class="skill-tag-small">NetworkX</span>
+                        <span class="skill-tag-small">Feature Engineering</span>
+                    </div>
+                </article>
+
+                <article class="research-card">
+                    <div class="research-header">
+                        <h3 class="research-title"><a href="https://github.com/Teerat-CH/Classifly" target="_blank">Classifly<svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></h3>
+                    </div>
+                    <p class="research-description">
+                        Image classification of 75 butterfly species using transfer learning with YOLOv8 for image segmentation and ConvNeXt Large for classification.
+                    </p>
+                    <div class="experience-skills">
+                        <span class="skill-tag-small">Image segmentation/classification</span>
+                        <span class="skill-tag-small">Transfer Learning</span>
+                        <span class="skill-tag-small">Fine-tuning</span>
+                        <span class="skill-tag-small">YOLOv8</span>
+                        <span class="skill-tag-small">TensorFlow</span>
+                    </div>
+                </article>
+
+                <article class="research-card">
+                    <div class="research-header">
+                        <h3 class="research-title"><a href="https://github.com/Teerat-CH/AutomaticDifferentiation" target="_blank">Automatic Differentiation<svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></h3>
+                    </div>
+                    <p class="research-description">
+                        Automatic differentiation engine from scratch using forward-backward passes through an expression tree + Mathematical equation parser.
+                    </p>
+                    <div class="experience-skills">
+                        <span class="skill-tag-small">Python</span>
+                        <span class="skill-tag-small">Automatic Differentiation</span>
+                        <span class="skill-tag-small">Expression Tree</span>
+                    </div>
+                </article>
+
+                <article class="research-card">
+                    <div class="research-header">
+                        <h3 class="research-title"><a href="https://github.com/Teerat-CH/Backtestr" target="_blank">Backtesting Engine<svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></h3>
+                    </div>
+                    <p class="research-description">
+                        back-testing platform for personalized investment strategies, allowing users to customize technical indicators, formulate complex buy/sell signals, and visualize portfolio performance over time.
+                    </p>
+                    <div class="experience-skills">
+                        <span class="skill-tag-small">Python</span>
+                        <span class="skill-tag-small">Visualization</span>
+                        <span class="skill-tag-small">Technical Analysis</span>
+                    </div>
+                </article>
+
+                <article class="research-card">
+                    <div class="research-header">
+                        <h3 class="research-title"><a href="https://github.com/Teerat-CH/star-cluster-plot" target="_blank">StarClusterPlot<svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></h3>
+                    </div>
+                    <p class="research-description">
+                        Python package that helps visualize a star cluster's structure and its Hertzsprung-Russell Diagram with color correspond to star's temperature.
+                    </p>
+                    <div class="experience-skills">
+                        <span class="skill-tag-small">Python</span>
+                        <span class="skill-tag-small">Matplotlib</span>
+                        <span class="skill-tag-small">Library Development</span>
+                        <span class="skill-tag-small">Visualization</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Teerat Chanromyen. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
