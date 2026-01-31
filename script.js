@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const html = document.documentElement;
     
     // Check for saved theme preference or default to dark
-    const savedTheme = localStorage.getItem('theme') || 'dark';
+    const savedTheme = localStorage.getItem('theme') || 'light';
     html.setAttribute('data-theme', savedTheme);
     
     // Toggle theme on button click
