@@ -8,7 +8,7 @@
     --accent: #7a5c45;
     --accent-hover: #5d4433;
     --border: #ebe3d9;
-    --card-bg: #ffffff;
+    --card-bg: rgba(250, 243, 234, 0.8);
     --card-shadow: 0 1px 3px rgba(139, 109, 76, 0.1);
     --card-shadow-hover: 0 4px 12px rgba(139, 109, 76, 0.15);
     --tag-bg: #f5ebe0;
@@ -505,8 +505,8 @@ body {
 
 .research-link {
     padding: 0.4rem 0.9rem;
-    background-color: var(--bg-secondary);
-    color: var(--text-secondary);
+    background-color: var(--tag-bg);
+    color: var(--tag-text);
     text-decoration: none;
     border-radius: 6px;
     font-size: 0.85rem;
