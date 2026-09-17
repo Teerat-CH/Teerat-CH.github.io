@@ -110,7 +110,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         link.classList.add('active');
 
                         // Update the browser history
-                        history.pushState({ page }, '', `${page}.html`);
+                        const url = page === 'index' ? '/' : `${page}.html`;
+                        history.pushState({ page }, '', url);
                     }
                 } catch (error) {
                     console.error('Error loading page:', error);
